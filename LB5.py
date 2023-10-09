@@ -84,8 +84,8 @@ def plot_results(sizes, avg_case_results, worst_results, all_results):
 
     plt.tight_layout()
     plt.show()
-    print(f"Линейная зависимость для худшего случая: {worst_fit[0]}a + {worst_fit[1]}b + {worst_fit[2]}c")
-    print(f"Линейная зависимость для среднего случая: {avg_fit[0]}a + {avg_fit[1]}b + {avg_fit[2]}c")
+    print(f"Линейная зависимость для худшего случая: {worst_fit[0]}x^2 + {worst_fit[1]}x + {worst_fit[2]}")
+    print(f"Линейная зависимость для среднего случая: {avg_fit[0]}x^2 + {avg_fit[1]}x + {avg_fit[2]}")
 if __name__ == "__main__":
     num_experiments = 30  # Количество экспериментов
     max_array_size = 1000  # Предельный размер массивов
